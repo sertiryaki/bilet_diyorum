@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace biletdiyorum
 {
-    public partial class bılet : Form
+    public partial class bilet : Form
     {
-        public bılet()
+        public bilet()
         {
             InitializeComponent();
-        }
-
-        private void txtIl_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -40,9 +35,9 @@ namespace biletdiyorum
             MessageBox.Show(mesaj);
         }
 
-        private void btnSıl_Click(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)
         {
-            if (lsbIller.SelectedItems.Count > 0 ) 
+            if (lsbIller.SelectedItems.Count > 0)
             {
                 var secili = lsbIller.SelectedItems;
 
@@ -58,24 +53,20 @@ namespace biletdiyorum
             }
         }
 
-
-  
-
-
-        private void bılet_DragEnter(object sender, DragEventArgs e)
+        private void bilet_DragEnter(object sender, DragEventArgs e)
         {
             if (e.KeyState == 1)
                 e.Effect = DragDropEffects.Move;
         }
 
-        private void bılet_DragOver(object sender, DragEventArgs e)
+        private void bilet_DragOver(object sender, DragEventArgs e)
         {
             if (e.KeyState == 1)
                 e.Effect = DragDropEffects.All;
         }
 
         int index = 0;
-        private void bılet_MouseDown(object sender, MouseEventArgs e)
+        private void bilet_MouseDown(object sender, MouseEventArgs e)
         {
             lsbIller = sender as ListBox;
             Point kor_nokta = new Point(e.X, e.Y);
@@ -84,20 +75,20 @@ namespace biletdiyorum
                 return;
             if (e.Button == MouseButtons.Left)
                 lsbIller.DoDragDrop(lsbIller.Items[index].ToString(), DragDropEffects.All);
-
-
-    }
+        }
 
         private void lsbIller2_DragDrop(object sender, DragEventArgs e)
         {
-            lsbIller2 = sender as ListBox;
-            lsbIller2.Items.Add(lsbIller.Items[index]);
-            lsbIller.Items.Remove(lsbIller.Items[index]);
-        }
+            ListBox lsbIller2 = sender as ListBox;
+            if (index == -1)
+                return;
 
-        private void lsbIller2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            if (!lsbIller2.Items.Contains(lsbIller.Items[index]) && lsbIller != lsbIller2)
+            {
+                lsbIller2.Items.Add(lsbIller.Items[index]);
+                lsbIller.Items.RemoveAt(index);
+            }
+            index = -1;
         }
 
         private void btnSag_Click(object sender, EventArgs e)
@@ -111,23 +102,22 @@ namespace biletdiyorum
                     lsbIller2.Items.Add(lsbIller.Items[silin]);
                     lsbIller.Items.RemoveAt(silin);
 
-                    
                 }
             }
             else
             {
                 MessageBox.Show("Seçim Yap");
             }
-        
         }
 
         private void btnSol_Click(object sender, EventArgs e)
         {
             var item = lsbIller2.SelectedItems;
             var secilen = lsbIller2.SelectedIndices;
-            for (int i =0; i < secilen.Count; i++)
+            for (int i = 0; i < secilen.Count; i++)
             {
-                lsbIller2.Items.Remove(item[i]);
+                lsbIller.Items.Add(lsbIller2.Items[secilen[i]]);
+                lsbIller2.Items.RemoveAt(i);
             }
         }
     }

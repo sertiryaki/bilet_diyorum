@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bılet.cs">
+    <Compile Include="bilet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bılet.Designer.cs">
-      <DependentUpon>bılet.cs</DependentUpon>
+    <Compile Include="bilet.Designer.cs">
+      <DependentUpon>bilet.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="bılet.resx">
-      <DependentUpon>bılet.cs</DependentUpon>
+    <EmbeddedResource Include="bilet.resx">
+      <DependentUpon>bilet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

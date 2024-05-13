@@ -16,7 +16,7 @@ namespace biletdiyorum
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new bılet());
+            Application.Run(new bilet());
         }
     }
 }

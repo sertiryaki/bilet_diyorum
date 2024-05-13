@@ -8,3 +8,13 @@ C:\Users\ertir\source\repos\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.csp
 C:\Users\ertir\source\repos\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.csproj.CoreCompileInputs.cache
 C:\Users\ertir\source\repos\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.exe
 C:\Users\ertir\source\repos\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.pdb
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\bin\Debug\biletdiyorum.exe.config
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\bin\Debug\biletdiyorum.exe
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\bin\Debug\biletdiyorum.pdb
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.csproj.AssemblyReference.cache
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.bilet.resources
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.Properties.Resources.resources
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.csproj.GenerateResource.cache
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.csproj.CoreCompileInputs.cache
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.exe
+C:\Users\ertir\OneDrive\Belgeler\GitHub\biletdiyorum\biletdiyorum\obj\Debug\biletdiyorum.pdb

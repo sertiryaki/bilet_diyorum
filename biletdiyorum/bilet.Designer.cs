@@ -1,6 +1,6 @@
 ﻿namespace biletdiyorum
 {
-    partial class bılet
+    partial class bilet
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -30,7 +30,7 @@
         {
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGoster = new System.Windows.Forms.Button();
-            this.btnSıl = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lsbIller = new System.Windows.Forms.ListBox();
             this.txtIl = new System.Windows.Forms.TextBox();
@@ -59,15 +59,15 @@
             this.btnGoster.UseVisualStyleBackColor = true;
             this.btnGoster.Click += new System.EventHandler(this.btnGoster_Click);
             // 
-            // btnSıl
+            // btnSil
             // 
-            this.btnSıl.Location = new System.Drawing.Point(229, 244);
-            this.btnSıl.Name = "btnSıl";
-            this.btnSıl.Size = new System.Drawing.Size(108, 23);
-            this.btnSıl.TabIndex = 2;
-            this.btnSıl.Text = "Seçilenleri Sil";
-            this.btnSıl.UseVisualStyleBackColor = true;
-            this.btnSıl.Click += new System.EventHandler(this.btnSıl_Click);
+            this.btnSil.Location = new System.Drawing.Point(229, 244);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(108, 23);
+            this.btnSil.TabIndex = 2;
+            this.btnSil.Text = "Seçilenleri Sil";
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // label1
             // 
@@ -92,12 +92,13 @@
             "Londra"});
             this.lsbIller.Location = new System.Drawing.Point(142, 100);
             this.lsbIller.Name = "lsbIller";
+            this.lsbIller.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lsbIller.Size = new System.Drawing.Size(131, 95);
             this.lsbIller.TabIndex = 4;
             this.lsbIller.DragDrop += new System.Windows.Forms.DragEventHandler(this.lsbIller2_DragDrop);
-            this.lsbIller.DragEnter += new System.Windows.Forms.DragEventHandler(this.bılet_DragEnter);
-            this.lsbIller.DragOver += new System.Windows.Forms.DragEventHandler(this.bılet_DragOver);
-            this.lsbIller.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bılet_MouseDown);
+            this.lsbIller.DragEnter += new System.Windows.Forms.DragEventHandler(this.bilet_DragEnter);
+            this.lsbIller.DragOver += new System.Windows.Forms.DragEventHandler(this.bilet_DragOver);
+            this.lsbIller.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bilet_MouseDown);
             // 
             // txtIl
             // 
@@ -105,7 +106,6 @@
             this.txtIl.Name = "txtIl";
             this.txtIl.Size = new System.Drawing.Size(100, 20);
             this.txtIl.TabIndex = 5;
-            this.txtIl.TextChanged += new System.EventHandler(this.txtIl_TextChanged);
             // 
             // btnSag
             // 
@@ -133,15 +133,15 @@
             this.lsbIller2.FormattingEnabled = true;
             this.lsbIller2.Location = new System.Drawing.Point(468, 100);
             this.lsbIller2.Name = "lsbIller2";
+            this.lsbIller2.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lsbIller2.Size = new System.Drawing.Size(131, 95);
             this.lsbIller2.TabIndex = 8;
-            this.lsbIller2.SelectedIndexChanged += new System.EventHandler(this.lsbIller2_SelectedIndexChanged);
             this.lsbIller2.DragDrop += new System.Windows.Forms.DragEventHandler(this.lsbIller2_DragDrop);
-            this.lsbIller2.DragEnter += new System.Windows.Forms.DragEventHandler(this.bılet_DragEnter);
-            this.lsbIller2.DragOver += new System.Windows.Forms.DragEventHandler(this.bılet_DragOver);
-            this.lsbIller2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bılet_MouseDown);
+            this.lsbIller2.DragEnter += new System.Windows.Forms.DragEventHandler(this.bilet_DragEnter);
+            this.lsbIller2.DragOver += new System.Windows.Forms.DragEventHandler(this.bilet_DragOver);
+            this.lsbIller2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bilet_MouseDown);
             // 
-            // bılet
+            // bilet
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,15 +153,15 @@
             this.Controls.Add(this.txtIl);
             this.Controls.Add(this.lsbIller);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSıl);
+            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGoster);
             this.Controls.Add(this.btnEkle);
-            this.Name = "bılet";
+            this.Name = "bilet";
             this.Text = "Form1";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.lsbIller2_DragDrop);
-            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.bılet_DragEnter);
-            this.DragOver += new System.Windows.Forms.DragEventHandler(this.bılet_DragOver);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bılet_MouseDown);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.bilet_DragEnter);
+            this.DragOver += new System.Windows.Forms.DragEventHandler(this.bilet_DragOver);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bilet_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,7 +171,7 @@
 
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnGoster;
-        private System.Windows.Forms.Button btnSıl;
+        private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lsbIller;
         private System.Windows.Forms.TextBox txtIl;
